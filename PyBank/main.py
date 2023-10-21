@@ -64,12 +64,19 @@ with open(output_path, "w", newline="") as csvfile:
 
 #Display Results
 
-    csvwriter.writerow(["Financial Analysis"]) 
-    csvwriter.writerow([f"Total Months:", f"{total_months}"])
-    csvwriter.writerow([f"Total:", f"${total}"])
-    csvwriter.writerow([f"Average Change:", f"${average_change}"])
-    csvwriter.writerow([f"Greatest Increase in Profits:", f"{greatest_increase_month} (${greatest_increase})"])
-    csvwriter.writerow([f"Greatest Decrease in Profits:", f"{greatest_decrease_month} (${greatest_decrease})"])
+    csvwriter.writerow(["Financial Analysis"])
+
+    csvwriter.writerow(["--------------------------"]) 
+
+    csvwriter.writerow([f"Total Months: " f"{total_months}"])
+
+    csvwriter.writerow([f"Total: " f"${total}"])
+
+    csvwriter.writerow([f"Average Change: " f"${average_change}"])
+
+    csvwriter.writerow([f"Greatest Increase in Profits: " f"{greatest_increase_month} (${greatest_increase})"])
+
+    csvwriter.writerow([f"Greatest Decrease in Profits: " f"{greatest_decrease_month} (${greatest_decrease})"])
 
 #Print Analysis to Terminal
 
@@ -84,19 +91,19 @@ print()
 
 
 
-print(f"Total Months: {total_months}")
+print(f"Total Months: " f"{total_months}")
 print()
 
-print(f"Total: ${total}")
+print(f"Total: " f"${total}")
 print()
     
-print(f"Average Change: ${average_change}")
+print(f"Average Change: " f"${average_change}")
 
 print()
 
-print(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase})")
+print(f"Greatest Increase in Profits: " f"{greatest_increase_month} (${greatest_increase})")
 print()
-print(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease})") 
+print(f"Greatest Decrease in Profits: " f"{greatest_decrease_month} (${greatest_decrease})") 
 print()           
     
 
