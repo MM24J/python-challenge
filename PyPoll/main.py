@@ -87,10 +87,22 @@ with open(output_path, "w", newline = "") as csvfile:
 #Display Results
 
     csvwriter.writerow(["Election Results"])
-    csvwriter.writerow([f"Total Votes:", f"{total_votes}"])
+
+    csvwriter.writerow(["-----------------------"])
+
+    csvwriter.writerow([f"Total Votes: " f"{total_votes}"])
+
+    
+
     for item in cleaned_output:
-        csvwriter.writerow([f"{item[0]}:", f"{item[1]}% ({item[2]})"])
-    csvwriter.writerow([f"Winner:", f"{winner}"])
+        csvwriter.writerow([f"{item[0]}: " f"{item[1]}% ({item[2]})"])
+
+    csvwriter.writerow(["-----------------------"])
+
+    csvwriter.writerow([f"Winner: " f"{winner}"])
+
+    csvwriter.writerow(["-----------------------"])
+
 
 
 
